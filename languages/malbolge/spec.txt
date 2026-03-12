@@ -1,0 +1,17 @@
+MALBOLGE CORE SPEC (Token-Optimized)
+1. Registers: A (accumulator), C (code pointer), D (data pointer).
+2. Memory: 59,049 cells (0-59048), each stores a 10-trit value (0-59048).
+3. Memory Initialization: Program is loaded at start. Remaining space filled using:
+   [m[i] = (m[i-1] + m[i-2]) % 30000]
+4. Execution Loop:
+   a. Check if m[C] is printable (33-126). If not, halt.
+   b. Encryption: Instruction = (m[C] + C) % 94.
+   c. Mapping: Use the decrypted value to find the operation (j, i, *, p, <, v, e, o).
+   d. After op: m[C] = Permute(m[C] % 94). Then C++, D++.
+5. Operations:
+   - j: Set D = m[D]
+   - i: Set C = m[D]
+   - *: Rotate m[D] right (ternary)
+   - p: Tritwise Op: (m[D] = CrazyOp(A, m[D]))
+   - <: Print chr(A % 256)
+   - v: Stop
