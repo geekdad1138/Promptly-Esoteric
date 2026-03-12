@@ -1,4 +1,4 @@
-# PromptlyEsoteric 🌀
+# Promptly-Esoteric 🌀
 
 An experimental framework designed to test the limits of LLM reasoning through the lens of **Esoteric Programming Languages (Esolangs)**.
 
