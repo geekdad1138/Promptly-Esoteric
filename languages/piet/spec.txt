@@ -1,0 +1,23 @@
+PIET CORE SPEC (Token-Optimized)
+1. Concept: A Piet program is a grid of color blocks (codels). 
+2. Execution: A 'Pointer' moves between codels. Commands are triggered by the CHANGE in Hue and Lightness.
+3. Colors: 18 colors (6 Hues: R, Y, G, C, B, M; 3 Lightness: Light, Normal, Dark).
+4. Command Table (Hue Change / Lightness Change):
+   - 0 Hue / 1 Light: push
+   - 0 Hue / 2 Light: pop
+   - 1 Hue / 0 Light: add
+   - 1 Hue / 1 Light: subtract
+   - 1 Hue / 2 Light: multiply
+   - 2 Hue / 0 Light: divide
+   - 2 Hue / 1 Light: mod
+   - 2 Hue / 2 Light: not
+   - 3 Hue / 0 Light: greater
+   - 3 Hue / 1 Light: pointer
+   - 3 Hue / 2 Light: switch
+   - 4 Hue / 0 Light: duplicate
+   - 4 Hue / 1 Light: roll
+   - 4 Hue / 2 Light: in(number)
+   - 5 Hue / 0 Light: in(char)
+   - 5 Hue / 1 Light: out(number)
+   - 5 Hue / 2 Light: out(char)
+5. Black/White: White is free space; Black is a wall that forces a turn.

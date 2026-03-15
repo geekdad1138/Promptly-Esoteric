@@ -1,0 +1,22 @@
+The Mission Prompt (Final Check)
+Go ahead and paste this into the Claude Opus 4.6 (Thinking) chat:
+
+Mission: The Piet "Hello" Masterpiece
+
+1. Context:
+
+Read the Piet language rules in languages/piet/spec.txt.
+
+Use the Pillow library to create a grid of colored pixels.
+
+2. Task:
+
+Write a Python script experiments/piet/01-hello-world/painter.py.
+
+This script should generate a hello.png where the color transitions (Hue and Lightness changes) correctly push the ASCII values for "H", "e", "l", "l", "o" onto the stack and print them.
+
+3. Verification:
+
+Run python tools/piet/verify.py experiments/piet/01-hello-world/hello.png.
+
+Iterate on the painter.py logic until the output is "Hello".

@@ -1,0 +1,11 @@
+Mission: Malbolge "Hello World" Experiment
+
+1. Context: * Read the language specification in languages/malbolge/spec.txt.
+
+Your goal is to write code that outputs "Hello World" by navigating the ternary rotation and encryption cycles.
+
+2. Task: * Generate the Malbolge code and save it to experiments/malbolge/01-hello-world/hello.mb.
+
+3. Verification Loop: * Run python tools/malbolge/verify.py experiments/malbolge/01-hello-world/hello.mb.
+
+Analyze any failure or incorrect output against the spec and iterate until the script returns "PASS".
