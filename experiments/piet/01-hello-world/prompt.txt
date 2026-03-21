@@ -1,6 +1,3 @@
-The Mission Prompt (Final Check)
-Go ahead and paste this into the Claude Opus 4.6 (Thinking) chat:
-
 Mission: The Piet "Hello" Masterpiece
 
 1. Context:
