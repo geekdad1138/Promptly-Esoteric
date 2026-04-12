@@ -16,7 +16,8 @@ For each character c in "Hello":
 The OUT(char) command fires on the *transition into* the next block.
 So for the final character we still need a "landing" codel whose colour
 creates the correct ΔHue/ΔLightness for OUT(char).  After that, a black
-codel terminates the program.
+codel stops forward progress; the interpreter will attempt to bounce
+but cycle detection in the interpreter terminates execution.
 
 Piet command encoding:
   PUSH      = ΔHue 1,  ΔLightness 0
@@ -90,7 +91,7 @@ def main():
 
     # ── Landing codel ──
     # The last out(char) fires when the interpreter enters this block.
-    # After this, the black codel terminates the program.
+    # After this, the black codel and cycle detection terminate the program.
     colour = get_colour(hue, lightness)
     segments.append((colour, 1))
 

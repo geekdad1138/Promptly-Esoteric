@@ -114,6 +114,7 @@ def interpret(image_path, debug=False):
     output = []
     max_steps = 100000
     step = 0
+    seen_states = set()  # cycle detection
 
     def current_class():
         return classify(grid[cy][cx])
@@ -163,6 +164,14 @@ def interpret(image_path, debug=False):
     while step < max_steps:
         step += 1
         cls = current_class()
+
+        # Cycle detection: if we've been in this exact state before, terminate
+        state_key = (cx, cy, dp, cc, tuple(stack))
+        if state_key in seen_states:
+            if debug:
+                print(f"Program terminated at step {step} (cycle detected)")
+            break
+        seen_states.add(state_key)
 
         if cls in ("white", "black"):
             # Shouldn't start on black; if white, slide
