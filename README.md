@@ -8,9 +8,9 @@ Inspired by recent research (e.g., USC’s Idris/GPT-5 study), this repository d
 
 | Language | Status | Summary Page |
 | :--- | :--- | :--- |
-| **Malbolge** | PASS | [View Summary](experiments/malbolge/SUMMARY.md) |
-| **Piet** | PASS | [View Summary](experiments/piet/SUMMARY.md) |
-| **Befunge** | PASS | [View Summary](experiments/befunge/SUMMARY.md) |
+| **Malbolge** | PASS | [View Summary](experiments/malbolge/summary.md) |
+| **Piet** | PASS | [View Summary](experiments/piet/summary.md) |
+| **Befunge** | PASS | [View Summary](experiments/befunge/summary.md) |
 
 ## 🛠️ About The Babel Loop
 This repo uses a recursive feedback loop where the AI reads specs, generates code, executes it locally, and refines based on stderr logs.
