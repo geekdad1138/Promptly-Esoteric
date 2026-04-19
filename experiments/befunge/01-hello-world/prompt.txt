@@ -1,0 +1,15 @@
+## Mission: Befunge-93 "Hello World" Experiment
+
+### 1. Context
+* **Logic:** Read the Befunge-93 specification in `languages/befunge/spec.txt`. 
+* **Spatial Movement:** Befunge operates on a 2D grid (the "playfield"). Commands like `>`, `<`, `^`, and `v` change the direction of the Instruction Pointer.
+* **Strings:** Use the `"` command to toggle "String Mode," which pushes ASCII values of characters onto the stack as the IP moves over them.
+
+### 2. Task
+* **Generate Code:** Create a Befunge-93 program that outputs "Hello World". 
+* **Design:** Aim for a non-linear layout (e.g., using a loop or a "snake" pattern) to fully utilize the 2D nature of the language.
+* **Save Path:** Save the source code to `experiments/befunge/01-hello-world/hello.bf`.
+
+### 3. Verification Loop
+* **Execution:** Run the program using the local interpreter: `python tools/befunge/verify.py experiments/befunge/01-hello-world/hello.bf`.
+* **Iterate:** If the output is incorrect or the IP gets stuck in an infinite loop, analyze the playfield coordinates and adjust the directional arrows until it returns a "PASS".
