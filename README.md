@@ -4,6 +4,17 @@ An experimental framework designed to test the limits of LLM reasoning through t
 
 Inspired by recent research (e.g., USC’s Idris/GPT-5 study), this repository documents the process of using **closed-loop compiler feedback** to "teach" AI how to program in languages with near-zero training data.
 
+## 🧪 Experiment Registry
+
+| Language | Status | Summary Page |
+| :--- | :--- | :--- |
+| **Malbolge** | PASS | [View Summary](experiments/malbolge/SUMMARY.md) |
+| **Piet** | PASS | [View Summary](experiments/piet/SUMMARY.md) |
+| **Befunge** | PASS | [View Summary](experiments/befunge/SUMMARY.md) |
+
+## 🛠️ About The Babel Loop
+This repo uses a recursive feedback loop where the AI reads specs, generates code, executes it locally, and refines based on stderr logs.
+
 ## 🔬 The Hypothesis
 
 Most LLMs are trained on massive datasets of Python, JavaScript, and C++. By forcing an AI to write in languages like **Malbolge**, **Brainfuck**, or **LOLCODE**, we strip away its "memory" of common patterns and force it to rely purely on:
