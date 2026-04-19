@@ -1,0 +1,31 @@
+BEFUNGE-93 CORE SPECIFICATION
+1. SPACE:
+   - Program area: Fixed 80x25 grid of ASCII characters.
+   - Topology: Toroidal (wraps around: left/right/top/bottom edges connect).
+   - Instruction Pointer (IP): Initially at (0,0), moving Right.
+
+2. STACK:
+   - LIFO (Last-In, First-Out) stack of signed long integers.
+   - Popping from an empty stack returns 0.
+
+3. COMMANDS:
+   - Direction:
+     > (Right), < (Left), v (Down), ^ (Up), ? (Random)
+   - Arithmetic/Logic:
+     + (Add), - (Sub), * (Mul), / (Div), % (Mod), ! (Not), ` (Greater Than)
+   - Flow Control:
+     _ (Horizontal IF: pops val, moves Right if val=0, Left if val!=0)
+     | (Vertical IF: pops val, moves Down if val=0, Up if val!=0)
+     # (Bridge: skip next command)
+     @ (Terminate)
+   - Input/Output:
+     . (Pop & Print Int), , (Pop & Print ASCII)
+     & (Input Int), ~ (Input Char)
+   - Stack Manipulation:
+     : (Dup), \ (Swap), $ (Pop & Discard)
+   - Memory/Data:
+     g (Get: Pop Y, Pop X, push val at grid[X,Y])
+     p (Put: Pop Y, Pop X, Pop Val, set grid[X,Y] = Val)
+     0-9 (Push integer)
+     " (Toggle String Mode: pushes ASCII of subsequent characters)
+     
