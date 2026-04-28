@@ -1,0 +1,5 @@
+C:\Users\dave\Documents\GitHub\Promptly-Esoteric\experiments\malbolge\net-translator\obj\Debug\net6.0\MalbolgeMath.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dave\Documents\GitHub\Promptly-Esoteric\experiments\malbolge\net-translator\obj\Debug\net6.0\MalbolgeMath.AssemblyInfoInputs.cache
+C:\Users\dave\Documents\GitHub\Promptly-Esoteric\experiments\malbolge\net-translator\obj\Debug\net6.0\MalbolgeMath.AssemblyInfo.cs
+C:\Users\dave\Documents\GitHub\Promptly-Esoteric\experiments\malbolge\net-translator\obj\Debug\net6.0\MalbolgeMath.csproj.CoreCompileInputs.cache
+C:\Users\dave\Documents\GitHub\Promptly-Esoteric\experiments\malbolge\net-translator\obj\Debug\net6.0\MalbolgeMath.sourcelink.json

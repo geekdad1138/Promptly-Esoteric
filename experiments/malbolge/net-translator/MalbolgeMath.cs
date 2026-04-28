@@ -30,8 +30,8 @@ public static class MalbolgeMath
         int result = 0;
         int power = 1; // 3^digit_position
 
-        // Process each ternary digit position
-        while (a > 0 || b > 0)
+        // Process each ternary digit position (at least once for 0,0 case)
+        do
         {
             // Extract the current ternary digit (0, 1, or 2)
             int tritA = a % 3;
@@ -48,6 +48,7 @@ public static class MalbolgeMath
             b /= 3;
             power *= 3;
         }
+        while (a > 0 || b > 0);
 
         return result;
     }
