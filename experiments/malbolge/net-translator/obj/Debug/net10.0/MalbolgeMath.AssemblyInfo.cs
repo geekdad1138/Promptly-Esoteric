@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MalbolgeMath")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8bd356e278cd74484f2d904584076839c610d63c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+685f495bdded730d37a76fb4f94d37aa12099184")]
 [assembly: System.Reflection.AssemblyProductAttribute("MalbolgeMath")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MalbolgeMath")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
