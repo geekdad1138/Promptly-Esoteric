@@ -11,6 +11,7 @@ Inspired by recent research (e.g., USC’s Idris/GPT-5 study), this repository d
 | **Malbolge** | PASS | [View Summary](experiments/malbolge/summary.md) |
 | **Piet** | PASS | [View Summary](experiments/piet/summary.md) |
 | **Befunge** | PASS | [View Summary](experiments/befunge/summary.md) |
+| **INTERCAL** | SETUP | [View Summary](experiments/intercal/summary.md) |
 
 ## 🛠️ About The Babel Loop
 This repo uses a recursive feedback loop where the AI reads specs, generates code, executes it locally, and refines based on stderr logs.
@@ -38,6 +39,7 @@ This project utilizes a feedback loop between the LLM and the local environment:
 * [ ] **Brainfuck:** Minimalist pointer manipulation and memory management.
 * [ ] **Piet:** Visual programming—can the AI describe/generate a functional bitmap image?
 * [ ] **Befunge:** Two-dimensional code flow that defies standard top-down parsing.
+* [ ] **INTERCAL:** Sarcastic statements, unusual operators, and strict politeness rules.
 
 ## 🚀 Getting Started
 

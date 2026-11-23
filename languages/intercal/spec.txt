@@ -1,0 +1,41 @@
+INTERCAL-72 / C-INTERCAL CORE SPECIFICATION
+
+1. STATEMENTS:
+   - Statements begin with DO, PLEASE, or PLEASE DO.
+   - MAYBE extensions and numbered labels are implementation-specific.
+   - PLEASE is used for politeness rules and every fifth statement or so
+     should be polite in traditional implementations.
+
+2. VARIABLES:
+   - 16-bit values: .1, .2, ... (spots)
+   - 32-bit values: :1, :2, ... (two-spots)
+   - 16-bit arrays: ,1, ,2, ... (tails)
+   - 32-bit arrays: ;1, ;2, ... (hybrids)
+   - Constants use meshes: #72.
+
+3. ARRAYS:
+   - DO ,1 <- #13 creates an array with 13 16-bit elements.
+   - DO ,1 SUB #1 <- #72 assigns 72 to element 1.
+   - Array indexes start at 1.
+
+4. ASSIGNMENT:
+   - The operator <- means "gets" or assigns.
+   - Expressions may use constants and variables.
+
+5. OPERATORS:
+   - ~ is the select operator.
+   - $ is the mingle operator.
+   - V, ? and & are unary OR, XOR, and AND respectively.
+   - Group expressions with sparks (') or rabbit ears (").
+
+6. CONTROL:
+   - (1) NEXT starts or resumes at line label (1).
+   - RESUME expression and FORGET expression manipulate the NEXT stack.
+   - ABSTAIN FROM and REINSTATE control whether statements execute.
+   - GIVE UP terminates a program.
+
+7. INPUT / OUTPUT:
+   - WRITE IN reads numeric input.
+   - READ OUT prints values.
+   - Interpreters differ in character output formatting.
+   - C-INTERCAL provides binary and wimp-mode extensions.

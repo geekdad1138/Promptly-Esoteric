@@ -1,0 +1,16 @@
+Mission: INTERCAL "Hello World" Experiment
+
+1. Context:
+   Read languages/intercal/spec.txt and the C-INTERCAL dialect notes.
+
+2. Task:
+   Create a C-INTERCAL program that outputs "Hello World".
+   Save it to experiments/intercal/01-hello-world/hello.i.
+
+3. Verification:
+   Run:
+     python tools/intercal/verify.py experiments/intercal/01-hello-world/hello.i
+
+   The verifier should prefer a local C-INTERCAL compiler (ick) when
+   available. Until ick is installed, it verifies the source structure
+   and reports SETUP rather than pretending to execute INTERCAL.
